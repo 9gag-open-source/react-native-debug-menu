@@ -9,3 +9,28 @@ For you to access your own app debug settings quickly
 ![Flat Mode](./docs/demo2.png)
 
 ## Usage
+
+```javascript
+import DebugMenu from 'react-native-debug-menu'
+
+class MyApp extends React.Component {
+    constructor (props) {
+        this.actions = [
+            { title: 'Debug item 1', action: () => { console.log('Awesome') } },
+            { title: 'Debug item 2', action: this.debugOption2 }
+        ]
+    }
+    
+    debugOption2 = () => {
+        console.log('Hello Debug Item 2')
+    }
+
+    render () {
+        return (
+            <DebugMenu 
+              actionItems={this.actions}
+            />
+        )
+    }
+}
+```
