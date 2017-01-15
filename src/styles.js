@@ -1,6 +1,3 @@
-/**
- * Created by raymond on 13/1/2017.
- */
 // @flow
 import {
   StyleSheet,
@@ -26,6 +23,8 @@ export default StyleSheet.create({
 
   debugMenuContainer: {
     position: 'absolute',
+    top: 0,
+    left: 0,
     width: Window.width,
     height: Window.height - 48,
     backgroundColor: 'rgba(0, 0, 0, 0.8)'
