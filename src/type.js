@@ -1,6 +1,4 @@
-/**
- * Created by raymond on 13/1/2017.
- */
+// @flow
 export type DebugMenuType = {
   actionItems: Array<DebugMenItemType>,
   toggleStyle?: any,
