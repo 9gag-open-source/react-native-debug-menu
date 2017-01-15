@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "description": "A togglable debug menu for you to add various items to access debug settings",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "prepublish": "npm run build",
     "clean": "rimraf dist",

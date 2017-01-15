@@ -8,4 +8,4 @@ For you to access your own app debug settings quickly
 ![Flat Mode](./docs/demo1.png)
 ![Flat Mode](./docs/demo2.png)
 
-
+## Usage

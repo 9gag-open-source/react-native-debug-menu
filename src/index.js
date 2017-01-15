@@ -1,3 +1,3 @@
-/**
- * Created by raymond on 13/1/2017.
- */
+import DebugMenu from './DebugMenu'
+
+export default DebugMenu
