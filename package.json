@@ -1,7 +1,6 @@
 {
   "name": "react-native-debug-menu",
   "version": "0.0.1",
-  "private": true,
   "description": "A togglable debug menu for you to add various items to access debug settings",
   "main": "src/index.js",
   "scripts": {
@@ -16,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/9gag/react-native-debug-menu.git"
+    "url": "git+https://github.com/9gag-open-source/react-native-debug-menu.git"
   },
   "keywords": [
     "debug",
@@ -27,7 +26,7 @@
   "author": "9gag Inc",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/9gag/react-native-debug-menu/issues"
+    "url": "https://github.com/9gag-open-source/react-native-debug-menu/issues"
   },
   "babel": {
     "presets": [
@@ -53,7 +52,7 @@
       "node_modules/enzyme/"
     ]
   },
-  "homepage": "https://github.com/9gag-open/react-native-debug-menu#readme",
+  "homepage": "https://github.com/9gag-open-source/react-native-debug-menu#readme",
   "dependencies": {
     "babel-cli": "^6.18.0",
     "babel-plugin-flow-react-proptypes": "^0.19.0",
