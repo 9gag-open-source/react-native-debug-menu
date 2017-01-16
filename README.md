@@ -16,7 +16,7 @@ import DebugMenu from 'react-native-debug-menu'
 class MyApp extends React.Component {
     constructor (props) {
         this.actions = [
-            { title: 'Debug item 1', action: () => { console.log('Awesome') } },
+            { title: 'Debug item 1', action: () => { console.log('Awesome') }, keepMenuOnAction: true },
             { title: 'Debug item 2', action: this.debugOption2 }
         ]
     }
