@@ -1,6 +1,6 @@
 {
   "name": "react-native-debug-menu",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A togglable debug menu for you to add various items to access debug settings",
   "main": "src/index.js",
   "scripts": {
