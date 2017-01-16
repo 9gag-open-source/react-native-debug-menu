@@ -7,5 +7,6 @@ export type DebugMenuType = {
 
 export type DebugMenItemType = {
   title: string,
-  action: Function
+  action: Function,
+  keepMenuOnAction: boolean // If set to true, menu won't disappear after action
 }

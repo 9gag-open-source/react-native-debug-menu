@@ -92,10 +92,20 @@ class DebugMenu extends React.Component {
     )
   }
 
-  _renderMenuItem (title: string, action: Function, index: number) {
+  _renderMenuItem (title: string, action: Function, keepMenuOnAction: boolean, index: number) {
     return (
       <View style={styles.menuItemStyle} key={`DebugItem-${index}`}>
-        <Button onPress={() => action()} title={title} />
+        <Button onPress={() => {
+          if (keepMenuOnAction) {
+            action()
+          } else {
+            this.setState({
+              showMenu: false
+            }, () => {
+              action()
+            })
+          }
+        }} title={title} />
       </View>
     )
   }
@@ -106,7 +116,7 @@ class DebugMenu extends React.Component {
         <ScrollView style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>
           {
             this.props.actionItems.map((menItem, index) => {
-              return this._renderMenuItem(menItem.title, menItem.action, index)
+              return this._renderMenuItem(menItem.title, menItem.action, menItem.keepMenuOnAction, index)
             })
           }
         </ScrollView>
